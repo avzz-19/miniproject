@@ -15,7 +15,7 @@ body {
     /* Add image */
     background-image: url("/img/hands.jpg");
 
-    /* Make image center */
+
 
     /* Make image fixed */
     background-attachment: fixed, scroll;
@@ -38,6 +38,7 @@ body.active {
     width: 800px;
     height: 580px;
     margin: 20px;
+    margin-top: 250px;
 }
 
 .bluebg {
