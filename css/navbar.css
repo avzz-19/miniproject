@@ -31,7 +31,7 @@
   }
   
   /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+  .topnav .icon1 {
     display: none;
   }
   
@@ -40,7 +40,7 @@
       display: none;
     }
   
-    .topnav a.icon {
+    .topnav a.icon1 {
       float: right;
       display: block;
     }
@@ -52,7 +52,7 @@
       position: absolute;
     }
   
-    .topnav.responsive a.icon {
+    .topnav.responsive a.icon1 {
       position: relative;
       right: 0;
       top: 0;
