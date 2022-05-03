@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     transition: 0.5s;
     /* Add image */
-    background-image: url("/miniproject/img/hands.jpg");
+    background-image: url("/img/hands.jpg");
 
     /* Make image center */
 
@@ -30,7 +30,7 @@ body {
 }
 
 body.active {
-    background-image: url("/miniproject/img/hands.jpg");
+    background-image: url("/img/hands.jpg");
 }
 
 .container {
@@ -145,7 +145,18 @@ body.active {
     margin-bottom: 20px;
     font-weight: 500;
 }
-
+.formbx .form form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
+}
 .formbx .form form input {
     width: 100%;
     margin-bottom: 20px;
@@ -153,6 +164,10 @@ body.active {
     outline: none;
     font-size: 16px;
     border: 1px solid #333;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
 }
 
 .formbx .form form input[type="submit"] {
