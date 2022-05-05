@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     transition: 0.5s;
     /* Add image */
-    background-image: url("/img/hands.jpg");
+    background-image: url("/img/teamwork.jpg");
 
 
 
@@ -30,7 +30,7 @@ body {
 }
 
 body.active {
-    background-image: url("/img/hands.jpg");
+    background-image: url("/img/teamwork.jpg");
 }
 .topnav {
     background-color: #333;
