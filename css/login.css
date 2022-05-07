@@ -1,3 +1,6 @@
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 * {
@@ -55,7 +58,7 @@ header a img {
   text-transform: uppercase;
   outline: 0;
   background-color: #328f8a;
-  background-image: url('/img/1240background.jpg');
+  background-image: url('../img/1240background.jpg'); 
   width: 100%;
   border: 0;
   padding: 15px;
@@ -85,8 +88,8 @@ header a img {
 }
 
 body {
-  background-color: #328f8a;
-  background-image: url('/img/1240background.jpg');
+  /* background-color: #328f8a; */
+  background-image: url('../img/1240background.jpg');
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -9,14 +9,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Link Bootstrap JS and JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/about.css?<?php echo time(); ?>">
+
 </head>
 
 <body>
@@ -26,10 +28,10 @@
 
     </header>
     <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.html"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
-        <a href="about.html">About</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
+        <a class="navbar-brand" href="index.php"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
+        <a href="about.php">About</a>
+        <a href="signin.php">Sign In</a>
+        <a href="signup.php">Sign Up</a>
         <a href="javascript:void(0);" class="icon1" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -46,7 +48,6 @@
     <div class="section1">
         <h1>About US</h1>
         <div class="transparent-box">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <h3>We developed Project Buddy because we searched for a site like that and could not find it.</h3>
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis aut culpa nulla distinctio iusto,<br>
             nisi quisquam est rem! Voluptatum deserunt repudiandae officia ipsum doloribus quas nostrum illo aut

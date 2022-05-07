@@ -4,27 +4,28 @@
 <head>
     <meta name="viewpoint" content="width=divice-width,initial-scale=1.0">
     <title>Details</title>
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="css/detail.css?<?php echo time(); ?>">
     <link rel="icon" type="image/jpg" href="img/logopp.jpg">
+
 </head>
 
 <body>
     <header>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </header>
     <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.html"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
-        <a href="about.html">About</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
+        <a class="navbar-brand" href="index.php"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
+        <a href="about.php">About</a>
+        <a href="signin.php">Sign In</a>
+        <a href="signup.php">Sign Up</a>
         <a href="javascript:void(0);" class="icon1" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <script>function myFunction() {
+    <script>
+        function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
@@ -37,17 +38,17 @@
         <div class="bluebg">
             <div class="box buildteam">
                 <h2>Willing to build a team </h2>
-                <button class="bteam">Build team</button>
+                <button class="bteam"><b>Build team</b></button>
             </div>
             <div class="box jointeam">
                 <h2>Willing to join a team </h2>
-                <button class="jteam">Join team</button>
+                <button class="jteam"><b>Join team</b></button>
             </div>
         </div>
         <div class="formbx">
             <div class="form buildteam">
                 <form>
-                    <h3>Build Team</h3>
+                    <h3><b>Build Team</b></h3>
                     <input type="Text" placeholder="Enter your state">
                     <input type="Text" placeholder="Enter your District">
                     <input type="Text" placeholder="Enter your College">
@@ -61,7 +62,7 @@
             </div>
             <div class="form jointeam">
                 <form>
-                    <h3>Join Team</h3>
+                    <h3><b>Join Team</b></h3>
                     <input type="Text" placeholder="Enter your State">
                     <input type="Text" placeholder="Enter your District">
                     <input type="Text" placeholder="Enter your College">
@@ -80,12 +81,12 @@
         const jteam = document.querySelector('.jteam');
         const formbx = document.querySelector('.formbx');
         const body = document.querySelector('body')
-        jteam.onclick = function () {
+        jteam.onclick = function() {
             formbx.classList.add('active')
             body.classList.add('active')
 
         }
-        bteam.onclick = function () {
+        bteam.onclick = function() {
             formbx.classList.remove('active')
             body.classList.remove('active')
 

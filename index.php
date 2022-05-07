@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/jpg" href="img/logopp.jpg">
     <title>Project Partner Finder</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css?<?php echo time(); ?>">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 </head>
 
@@ -19,10 +19,10 @@
 
     </header>
     <div class="topnav" id="myTopnav">
-        <a class="navbar-brand" href="index.html"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
-        <a href="about.html">About</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
+        <a class="navbar-brand" href="index.php"><img src="img/logopp.jpg" alt="Logo" style="width:40px;"></a>
+        <a href="about.php">About</a>
+        <a href="signin.php">Sign In</a>
+        <a href="signup.php">Sign Up</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
