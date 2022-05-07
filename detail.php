@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/detail.css?<?php echo time(); ?>">
     <link rel="icon" type="image/jpg" href="img/logopp.jpg">
 
+
 </head>
 
 <body>
@@ -49,29 +50,66 @@
             <div class="form buildteam">
                 <form>
                     <h3><b>Build Team</b></h3>
-                    <input type="Text" placeholder="Enter your state">
-                    <input type="Text" placeholder="Enter your District">
-                    <input type="Text" placeholder="Enter your College">
+                    <select name="State">
+                        <option value="">Select State</option>
+                        <option value="Karnataka">Kar</option>
+                        <option value="Kerala">Ker</option>
+                        <option value="Delhi">Del</option>
+                        <option value="AP">AP</option>
+                        <option value="Maharastra">MH</option>
+                    </select>
+                    <input type="text" placeholder="Enter your District">
+                    <select name="State">
+                        <option value="">Select College</option>
+                        <option value="RU">REVA UNIVERSITY</option>
+                        <option value="PU">PRESIDENCY UNIVERSITY</option>
+                        <option value="BMSIT">BMSIT</option>
+                        <option value="MVIT">MVIT</option>
+                        <option value="NITTE">NITTE</option>
+                    </select>
                     <input type="email" placeholder="Enter your email">
-                    <input type="text" placeholder="TECH STACK">
-                    <input type="Text" placeholder="Enter your area of intrest">
+                    <select name="tech" size=1 multiple>
+                        <option value="c++">C++</option>
+                        <option value="c#">C#</option>
+                        <option value="php">Php</option>
+                        <option value="java">Java</option>
+                        <option value="js">JS</option>
+                        <option value="html">Html</option>
+                        <option value="css">CSS</option>
+                        <option value="firebase">Firebase</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <input type="Text" placeholder="Enter your area of interest">
                     <textarea ng-model="text2" placeholder="Enter your expreience of working "></textarea>
                     <input type="submit" value="Find mate">
-
                 </form>
             </div>
             <div class="form jointeam">
                 <form>
                     <h3><b>Join Team</b></h3>
-                    <input type="Text" placeholder="Enter your State">
-                    <input type="Text" placeholder="Enter your District">
-                    <input type="Text" placeholder="Enter your College">
+                    <select name="State">
+                        <option value="">Select State</option>
+                        <option value="Karnataka">Kar</option>
+                        <option value="Kerala">Ker</option>
+                        <option value="Delhi">Del</option>
+                        <option value="AP">AP</option>
+                        <option value="Maharastra">MH</option>
+                    </select>
+                    <input type="text" placeholder="Enter your District">
+                    <select name="State">
+                        <option value="">Select College</option>
+                        <option value="RU">REVA UNIVERSITY</option>
+                        <option value="PU">PRESIDENCY UNIVERSITY</option>
+                        <option value="BMSIT">BMSIT</option>
+                        <option value="MVIT">MVIT</option>
+                        <option value="NITTE">NITTE</option>
+                    </select>
                     <input type="email" placeholder="Enter your email">
                     <input type="text" placeholder="Enter team Leader's Name">
                     <input type="Text" placeholder="Enter your area of interest">
                     <textarea ng-model="text2" placeholder="Enter your project Details"></textarea>
                     <input type="submit" value="Find team">
-
+           
                 </form>
             </div>
         </div>

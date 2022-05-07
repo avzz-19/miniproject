@@ -43,12 +43,13 @@
         <input type="email" name="email" placeholder="Email" required="required">
         <input type="password" name="pass" placeholder="Password" required="required">
         <input type="password" name="cpass" placeholder="Confirm Password" required="required">
-        <button type="submit" name="save" onClick="window.location.href='signin.php';"> Submit </button>
+        <button type="submit" name="save"> Submit </button>
         <p class="message">Already have an account? <a href="signin.php">Sign in</a>.</p>
       </form>
     </div>
   </div>
 </body>
+
 
 </html>
 
