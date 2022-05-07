@@ -48,10 +48,8 @@
     <div class="section1">
         <h1>About US</h1>
         <div class="transparent-box">
-        <h3>We developed Project Buddy because we searched for a site like that and could not find it.</h3>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis aut culpa nulla distinctio iusto,<br>
-            nisi quisquam est rem! Voluptatum deserunt repudiandae officia ipsum doloribus quas nostrum illo aut
-            reiciendis.</h3>
+        <h3>We developed Project Buddy because we searched for a website like that and could not find it.</h3>
+        <h3>We try to build a solution which can identify peers who are as motivated as you to work on a project, be it a small-scale project created to enhance your learning or a large-scale project which you are planning to commercialize in the future. </h3>
         </div>
         <section id="contact">
 
