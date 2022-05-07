@@ -99,47 +99,40 @@ body {
     display: block;
     text-align: left;
   }
+
 }
-.quote{
+/* .quote{
+  float:right;
   text-align: center;
   font-size: 1.7em;
   margin: auto;
   padding: 15px;
-  border: 2px rgb(105, 73, 126) ;
-  border-style: inset;
-  max-width: 36%;
-  margin-left: 3em;
-  margin-top:3em;
+  /* border: 2px rgb(105, 73, 126) ;
+  border-style: inset; */
+  /* max-width: 36%;
+
   margin-bottom:-1.5em;
+  margin-right:-500px ;
   position: relative;
   
-}
-
+} */
+/* 
 blockquote{
   color: #071013;
   text-shadow: -1px 1px #555;
   font-style: italic;
   position: relative;
-}
+} */ 
 @media only screen and (max-width: 800px) {
-  .quote
-  {
-    position: absolute;
-    margin-top: 26em;
-    margin-left:8em;
-    height: 3em;
-    width:800px;
-    font-size:18px;
-  }
   .searchbar1{
-    width: 800px;
+    width: 1200px;
     margin-right: -10em;
 
   } 
 }
-.left{
+/* .left{
   position: absolute;
-  top: -40px;
+  top: -20px;
   left: -25px;
   
   text-align: left;
@@ -150,22 +143,26 @@ blockquote{
   
 }
 .right{
+  top:35px;
   position:absolute;
-  right: -30px;
+  right: -20px;
   text-align: right;
   z-index: 10;
   font-size: 2em;
   color: #7263be;
   float:right;
   
-}
+} */
 
-.description{
-  width:40%;
+.container .describe{
+  
   margin-top: 4em;
-  margin-left: 6em;
+  margin-left: 3em;
   margin-bottom:-3em;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #7263be54;
+  padding:60px;
+  border-radius: 50% 0%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .searchbar1 .search {
@@ -176,6 +173,7 @@ blockquote{
   min-width: 30%;
   position: relative;
   display: flex;
+  margin-bottom: 4em;
 }
 
 .searchbar1 .searchTerm {
@@ -257,8 +255,145 @@ blockquote{
 }
 
 @media only screen and (max-width: 600px) {
-  .description{
+  .container{
     width: auto;
     display: block;
   }
+}
+
+
+.container{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--veryLightGray);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+}
+
+.header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
+
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;  
+}
+
+img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box {
+      width: 20%;
+   
+  }
+  .header p {
+      width: 30%;
+  }
+  
 }
