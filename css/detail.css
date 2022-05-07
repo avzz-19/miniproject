@@ -100,8 +100,8 @@ body.active {
 .bluebg .box button {
     cursor: pointer;
     padding: 10px 20px;
-    background: #229ccc;
-    color: #333;
+    background: #11a3dd;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     border: none;
