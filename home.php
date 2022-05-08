@@ -43,10 +43,14 @@
         <br>
 
             <?php
-				session_start();
-				include 'database.php';
-				$ID= $_SESSION["ID"];
-				$sql=mysqli_query($conn,"SELECT * FROM register where ID='$ID' ");
+				include 'conn.php';
+				include 'conn1.php';
+				include 'connLogin.php';
+				error_reporting(E_ERROR|E_PARSE);
+				
+				$first_name=$_POST["first_name"];
+
+				$sql=mysqli_query($conn,"SELECT * FROM `register` WHERE `First_Name`!='$first_name'");
 				$row  = mysqli_fetch_array($sql);
             ?>
             
@@ -89,7 +93,7 @@
 				</span>
 			</div>
 			
-			<h2>Ayush Jha</h2>
+			<h2><? php echo $row['First_name']</h2>
 			<button class="btn">Send Request</button>
 		</div>
 	</div>
@@ -160,22 +164,3 @@
 <div class="text-center">Want to Leave the Page? <br><a href="logout.php">Logout</a></div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

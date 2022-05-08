@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css?<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="css/detail.css?<?php echo time(); ?>">
     <link rel="icon" type="image/jpg" href="img/logopp.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
@@ -45,12 +47,16 @@
                 <h2>Willing to join a team </h2>
                 <button class="jteam"><b>Join team</b></button>
             </div>
-        </div>
+            </div>
+
+               
+
+
         <div class="formbx">
             <div class="form buildteam">
-                <form>
+                <form action="conn.php" method="POST">
                     <h3><b>Build Team</b></h3>
-                    <select name="State">
+                    <select name="State" class="form-control">
                         <option value="">Select State</option>
                         <option value="Karnataka">Kar</option>
                         <option value="Kerala">Ker</option>
@@ -58,8 +64,8 @@
                         <option value="AP">AP</option>
                         <option value="Maharastra">MH</option>
                     </select>
-                    <input type="text" placeholder="Enter your District">
-                    <select name="State">
+                    <input type="text" name="District" placeholder="Enter your District" class="form-control">
+                    <select name="College" class="form-control">
                         <option value="">Select College</option>
                         <option value="RU">REVA UNIVERSITY</option>
                         <option value="PU">PRESIDENCY UNIVERSITY</option>
@@ -67,8 +73,8 @@
                         <option value="MVIT">MVIT</option>
                         <option value="NITTE">NITTE</option>
                     </select>
-                    <input type="email" placeholder="Enter your email">
-                    <select name="tech" size=1 multiple>
+                    <input type="email" name="Email" placeholder="Enter your email" class="form-control">
+                    <select name="Tech" size=1 multiple class="form-control">
                         <option value="c++">C++</option>
                         <option value="c#">C#</option>
                         <option value="php">Php</option>
@@ -79,13 +85,15 @@
                         <option value="firebase">Firebase</option>
                         <option value="python">Python</option>
                     </select>
-                    <input type="Text" placeholder="Enter your area of interest">
-                    <textarea ng-model="text2" placeholder="Enter your expreience of working "></textarea>
-                    <input type="submit" value="Find mate">
+                    <input type="Text" name="Interest" placeholder="Enter your area of interest" class="form-control">
+                    <textarea ng-model="text2" name="Experience" placeholder="Enter your experience of working " class="form-control"></textarea>
+                    <!-- <input type="submit" value="Find mate"> -->
+                    <button type="submit" name="save_select" class="btn btn-primary">Save Selectbox</button>
                 </form>
             </div>
+            
             <div class="form jointeam">
-                <form>
+                <form action="conn1.php" method="POST">
                     <h3><b>Join Team</b></h3>
                     <select name="State">
                         <option value="">Select State</option>
@@ -95,8 +103,8 @@
                         <option value="AP">AP</option>
                         <option value="Maharastra">MH</option>
                     </select>
-                    <input type="text" placeholder="Enter your District">
-                    <select name="State">
+                    <input type="text"name="District" placeholder="Enter your District">
+                    <select name="College">
                         <option value="">Select College</option>
                         <option value="RU">REVA UNIVERSITY</option>
                         <option value="PU">PRESIDENCY UNIVERSITY</option>
@@ -104,11 +112,12 @@
                         <option value="MVIT">MVIT</option>
                         <option value="NITTE">NITTE</option>
                     </select>
-                    <input type="email" placeholder="Enter your email">
-                    <input type="text" placeholder="Enter team Leader's Name">
-                    <input type="Text" placeholder="Enter your area of interest">
-                    <textarea ng-model="text2" placeholder="Enter your project Details"></textarea>
-                    <input type="submit" value="Find team">
+                    <input type="email" name="Email" placeholder="Enter your email">
+                    <input type="text" name="Leader_name" placeholder="Enter team Leader's Name">
+                    <input type="Text" name="Interest" placeholder="Enter your area of interest">
+                    <textarea ng-model="text2" name="Project_details" placeholder="Enter your project Details"></textarea>
+                    <!-- <input type="submit" value="Find team" name="Find_team> -->
+                    <button type="submit" name="join_team" class="btn btn-primary">Join Team</button>
            
                 </form>
             </div>

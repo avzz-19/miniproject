@@ -2,7 +2,7 @@
     $url='localhost';
     $username='root';
     $password='';
-    $mini="mini1";
+    $mini="teammate";
     $conn=mysqli_connect($url,$username,$password,$mini);
     if(!$conn)
     {
